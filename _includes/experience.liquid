@@ -1,0 +1,66 @@
+<style>
+.exp-entry { padding: 0.9rem 0; }
+.exp-entry + .exp-entry { border-top: 1px solid var(--global-divider-color); }
+.exp-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 1em; }
+.exp-head h3 { font-size: 1.1rem; font-weight: 600; margin: 0; }
+.exp-meta { color: var(--global-text-color-light); font-size: 0.9rem; }
+.exp-role { font-style: italic; margin: 0.15em 0 0.4em; }
+.exp-entry ul { margin-bottom: 0; }
+</style>
+<div class="exp-entry">
+  <div class="exp-head"><h3>Berkeley AI Research (BAIR), EMBER Centre</h3><span class="exp-meta">Berkeley, CA · Apr 2026 – Present</span></div>
+  <p class="exp-role">Machine Learning Research</p>
+  <ul>
+    <li>Advised by <a href="https://jonasfrey96.github.io/">Jonas Frey</a> and Siming He in Prof. Jitendra Malik's and Prof. Claire Tomlin's labs.</li>
+    <li>First author of <a href="{{ '/assets/pdf/racing-the-clock.pdf' | relative_url }}">Racing the Clock: Teaching VLNs Budget-Conditioned Object Search</a>, <b>Best Paper Award</b> at the IROS 2026 Workshop on Intelligent Information Gathering. An extended version is under review at <b>ICRA 2027</b>.</li>
+    <li>Compared an object-level Bellman expert that routes among targets using the full map with a room-level expert that reasons about unexplored rooms through doorway evidence and cross-scene priors, and distilled both into Uni-NaVid.</li>
+    <li>Despite its lower expert return, room-level supervision gives the best student at every tested budget: at 2000 steps it finds <b>72.7%</b> of reachable targets, versus 68.5% for greedy-frontier supervision, 65.5% for object-level supervision, and 44.8% for the pretrained VLN.</li>
+    <li>Awarded an <b>NSF grant</b> valued at <b>$150,000</b> in compute via ACCESS.</li>
+  </ul>
+</div>
+<div class="exp-entry">
+  <div class="exp-head"><h3>Relling Systems</h3><span class="exp-meta">Berkeley, CA · Oct 2025 – Apr 2026</span></div>
+  <p class="exp-role">Machine Learning Research Intern</p>
+  <ul>
+    <li>Discovered and localized temporal blindness in robot foundation models (π0-FAST, π0.5) through a 255-episode evaluation framework and a 36-layer embedding probe; the findings drove the design of a plug-in temporal encoder.</li>
+    <li>LoRA fine-tuned π0.5 and π0-FAST on in-house robot demonstration data to adapt them to new tasks.</li>
+    <li>Shipped the episode collection and labeling tooling for the data generation platform, growing active users by <b>28.5%</b>.</li>
+  </ul>
+</div>
+<div class="exp-entry">
+  <div class="exp-head"><h3>Squarepoint Capital</h3><span class="exp-meta">London, UK · Jun 2025 – Aug 2025</span></div>
+  <p class="exp-role">PhD-level Quantitative Research Intern</p>
+  <ul>
+    <li>Deployed strategies replicating variance swaps under real-world volatility smiles; findings adopted for internal calibration review.</li>
+    <li><b>Highest PnL</b> in the intern class of PhD and Master's students; received a return offer.</li>
+  </ul>
+</div>
+<div class="exp-entry">
+  <div class="exp-head"><h3>Engelhart Trading</h3><span class="exp-meta">Houston, TX · Jun 2024 – Aug 2024</span></div>
+  <p class="exp-role">PhD-level Quantitative Research Intern</p>
+  <ul>
+    <li>Built a SABR Monte Carlo pricer (Milstein scheme, implied correlation per strike) for illiquid natural gas calendar spread options, adopted by the desk to price and hedge unquoted spreads and track the Oct–Jan skew daily.</li>
+    <li>Built a tail-risk monitor for power price shocks, flagging 5th/95th percentile scenarios by peak and off-peak hours each morning.</li>
+  </ul>
+</div>
+<div class="exp-entry">
+  <div class="exp-head"><h3>Handle.com</h3><span class="exp-meta">San Francisco, CA · Jun 2024 – Aug 2024</span></div>
+  <p class="exp-role">Software Engineering Intern</p>
+  <ul>
+    <li>Built LLM-powered scrapers and APIs over Google Maps, DataTree, and state license websites to verify property owners and contractors, raising search accuracy by <b>35%</b>.</li>
+  </ul>
+</div>
+<div class="exp-entry">
+  <div class="exp-head"><h3>LinkedIn</h3><span class="exp-meta">San Francisco, CA · Feb 2024 – May 2024</span></div>
+  <p class="exp-role">Software Engineering Intern</p>
+  <ul>
+    <li>Built and shipped to production a Java tool on the Machine Learning team that automates integrations between OpenAPI clients and <b>7</b> third-party providers, using NLP to classify errors and speed up failure triage.</li>
+  </ul>
+</div>
+<div class="exp-entry">
+  <div class="exp-head"><h3>Fourth Down: Prediction Markets</h3><span class="exp-meta">Project</span></div>
+  <ul>
+    <li>Built and operated a live event-trading dashboard for college football markets, streaming odds and play-by-play into one interface with sub-second updates.</li>
+    <li>Reacted to large in-game price swings within 300–400 ms, growing a $15k bankroll to <b>$62k</b> over 8 weeks (313% ROI).</li>
+  </ul>
+</div>

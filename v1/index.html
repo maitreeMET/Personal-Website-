@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maitree Meher</title>
+  <meta name="description" content="Maitree Meher — EECS + Business at UC Berkeley (M.E.T.). Robot learning and vision-language navigation research at BAIR.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <img class="photo" src="../assets/img/profile_pic.jpg" alt="Maitree Meher">
+      <div>
+        <h1>Hey! I'm Maitree</h1>
+        <p><b>I'm an undergrad in UC Berkeley's M.E.T. dual-degree program, studying EECS and Business Administration at Haas.</b></p>
+        <p class="links">
+          <a href="mailto:maitree.meher@berkeley.edu">email</a> /
+          <a href="../assets/pdf/Maitree_Meher_Resume.pdf">resume</a> /
+          <a href="https://www.linkedin.com/in/maitreemeher/">linkedin</a> /
+          <a href="https://github.com/maitreeMET">github</a>
+        </p>
+      </div>
+    </header>
+
+    <hr>
+
+    <section>
+      <h5>About Me</h5>
+      <p>
+        I do machine learning research at <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a> in the EMBER Centre,
+        advised by <a href="https://jonasfrey96.github.io/">Jonas Frey</a> and Siming He in Prof. Jitendra Malik's and Prof. Claire Tomlin's labs.
+        I work on vision-language navigation: teaching robots to search for objects when they're on a time budget.
+      </p>
+      <p>
+        My first-author paper, <a href="../assets/pdf/racing-the-clock.pdf"><i>Racing the Clock</i></a>, won the
+        <b>Best Paper Award</b> at the IROS 2026 Workshop on Intelligent Information Gathering. It asks how an action budget
+        should shape where a VLN policy searches, and what kind of expert demonstrations actually teach budget-conditioned search.
+        The agent sees only RGB history, a target category, and a remaining-budget countdown, and has to find as many
+        distinct instances of the target as it can before time runs out.
+      </p>
+      <p>
+        We compare two finite-budget Bellman experts: an <i>object-level</i> expert that routes among targets using the full map,
+        and a <i>room-level</i> expert that only reasons about unexplored rooms through doorway evidence and cross-scene priors.
+        We distill both into Uni-NaVid. Despite its lower expert return, room-level supervision gives the best student at every
+        budget we tested. At 2000 steps it finds <b>72.7%</b> of reachable targets, versus 68.5% for greedy-frontier supervision,
+        65.5% for object-level supervision, and 44.8% for the pretrained VLN. The takeaway: an expert's return doesn't predict
+        how well it teaches a partially-observing student.
+      </p>
+      <p>
+        The work is supported by an NSF ACCESS compute grant (~$150k), and an extended version is under review at ICRA 2027.
+      </p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h5>Publications</h5>
+      <ul class="pubs">
+        <li>
+          <a class="title" href="../assets/pdf/racing-the-clock.pdf">Racing the Clock: Teaching VLNs Budget-Conditioned Object Search</a>
+          <b>[<a href="../assets/pdf/racing-the-clock.pdf">pdf</a>]</b><br>
+          <span class="authors"><b>Maitree Meher</b>, Siming He, S. Shankar Sastry, Jitendra Malik, Claire Tomlin, Jonas Frey</span><br>
+          <span class="venue">IROS Workshop on Intelligent Information Gathering, 2026 <span class="award">(Best Paper Award)</span></span>
+        </li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h5>Some past work</h5>
+      <ul>
+        <li>Best Paper Award, IROS 2026 Workshop on Intelligent Information Gathering; NSF ACCESS compute grant (~$150k).</li>
+        <li><b>Relling Systems</b> (2025–26): probed π0-FAST/π0.5 across 255 episodes and 36 layers; LoRA fine-tuned both on in-house demos.</li>
+        <li><b>Squarepoint Capital</b> (2025): variance swap replication under real-world vol smiles; highest PnL in the intern class.</li>
+        <li><b>Engelhart Trading</b> (2024): SABR Monte Carlo pricer for natural gas calendar spread options; power price tail-risk monitor.</li>
+        <li><b>Handle.com</b> (2024): LLM-powered scrapers and APIs for property owner and contractor verification.</li>
+        <li><b>LinkedIn</b> (2024): Java tool on the ML team automating OpenAPI client integrations with 7 providers.</li>
+        <li><b>Fourth Down</b>: live event-trading dashboard for college football prediction markets with sub-second updates.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <footer>
+      <p>Feel free to reach out at <a href="mailto:maitree.meher@berkeley.edu">maitree.meher@berkeley.edu</a>!</p>
+      <p class="muted">Last updated October 2026.</p>
+    </footer>
+  </main>
+</body>
+</html>
