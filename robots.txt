@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://maitreemet.github.io/sitemap.xml
